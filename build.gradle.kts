@@ -1,9 +1,7 @@
-import org.jetbrains.kotlin.gradle.dsl.KotlinVersion.*
-
 val kotlinRepositoryPath: String? by project
 
 plugins {
-    kotlin("jvm") version "2.0.255-SNAPSHOT"
+    kotlin("jvm") version "2.0.20"
     application
 }
 
@@ -14,10 +12,6 @@ repositories {
             url = uri("file://$it")
         }
     }
-}
-
-kotlin {
-    compilerOptions.languageVersion.set(KOTLIN_2_0)
 }
 
 application {
